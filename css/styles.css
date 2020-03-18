@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+src: url(../fonts/BMJUA_otf.otf);
+font-family: "jua";
+}
+body{
+    background-color: #f0e8d9;
+}
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
+h1{
+    font-size: 64px;
+    font-family: "jua";
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #58595b;
+}
+h2{
+    font-size: 32px;
+    font-family: "jua";
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #58595b;
+}
+.game{
+    background-color: white;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "jua";
+    color: #58595b;
+    display: inline-block;
+}
+.m_right{
+margin-right: 15px;
+margin-left: 15px;
+
+}
+.game img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.game h3{
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+.game h4{
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.game p{
+ text-align: left;
+    margin: 0px 0px 16px 0px;
+}
+.game a{
+    display: inline-block;
+    background-color: #bbd2f8;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+text-decoration: none;
+    color: #0000ee;
+}
+.info{
+padding-top: 5px;
+padding-bottom: 20px;
+padding-right: 10px;
+padding-left: 20px;
+}
+.clearfix{
+clear: both;
+}
+.menu{
+    display: block;
+    font-family: "jua";
+    font-size: 16px;
+    word-spacing: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #58595b;
+    border: solid 1px #58595b;
+    border-radius: 5px;
+    }
+.menu ul{
+    display: inline-block;
+    width: 100%; 
+}
+.menu button{
+    color: #58595b;
+    font-family: "jua";
+  background: none;
+  border: none;
+  margin: 10px 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.go-to-top{
+    font-family: "jua";
+    font-size: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #2a91db;
+    border-color: #2a91db;
+}
+.playerItem{
+    width: 12%;
+}
+.genre_menu{
+    height: 150px;
+}
+.genre_item_list{
+    width: 80px;
+    height: 80px;
+    background-position:center center;
+    background-size: cover;
+    font-family: "jua";
+    border: solid 1px #58595b;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.list_1{
+    background-image: url("../images/strategy.png");
+}
+.list_2{
+    background-image: url("../images/inference.png");
+}
+.list_3{
+    background-image: url("../images/psychological.png");
+}
+.list_4{
+    background-image: url("../images/speed.png");
+}
+.list_5{
+    background-image: url("../images/active.png");
+}
+.list_6{
+    background-image: url("../images/puzzle.png");
+}
+.list_7{
+    background-image: url("../images/memory.png");
+}
+.list_8{
+    background-image: url("../images/luck.png");
+}
+.list_9{
+    background-image: url("../images/betting.png");
+}
+.list_10{
+    background-image: url("../images/cooperation.png");
+}
+.list_11{
+    background-image: url("../images/economy.png");
+}
+.list_12{
+    background-image: url("../images/auction.png");
+}
+.list_13{
+    background-image: url("../images/negotiation.png");
+}
+.list_14{
+    background-image: url("../images/team.png");
+}
+.list_15{
+    background-image: url("../images/lie.png");
+}
+.list_16{
+    background-image: url("../images/mafia.png");
+}
+.genre_item{
+    font-family: "jua";
+    color: #58595b;
+}
+.genre_title{
+    margin-top: 80px;
+    color: #58595b;
+    text-align: center;
+    font-weight: bold;
+}
+.divide_line{
+    border-bottom: solid 3px #58595b;
+    margin-bottom: 5px;
+}
+.divide_line h3{
+    color: #58595b;
+    font-family: "jua";
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+.overflow_scroll{
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+}

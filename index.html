@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>보드게임 천국</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>보드게임 천국</h1>
+    <h2>넌 보드게임 할 때가 제일 이뻐!</h2>
+    <nav class="menu">
+        <ul class="menuList">
+            <li class="playerItem"><a href="/"><button type="button" id="allplayerFilter">전체</button></a></li>
+            <li class="playerItem"><button type="button" id="2playerFilter">2인</button></li>
+            <li class="playerItem"><button type="button" id="3playerFilter">3인</button></li>
+            <li class="playerItem"><button type="button" id="4playerFilter">4인</button></li>
+            <li class="playerItem"><button type="button" id="5playerFilter">5인</button></li>
+            <li class="playerItem"><button type="button" id="6playerFilter">6인</button></li>
+            <li class="playerItem"><button type="button" id="7playerFilter">7인</button></li>
+            <li class="playerItem"><button type="button" id="8playerFilter">8인이상</button></li>
+        </ul>
+    </nav>
+    <div class="genre_menu">
+        <div class="genre_item">추천장르</div>
+        <ul>
+            <a href="#strategy">
+                <li class="genre_item_list list_1 2player 3player 4player 5player 6player">
+                    <h3 class="genre_title">전략</h3>
+                </li>
+            </a>
+            <a href="#reasoning">
+                <li class="genre_item_list list_2 2player 3player 4player 5player 6player">
+                    <h3 class="genre_title">추리</h3>
+                </li>
+            </a>
+            <a href="#trial">
+                <li class="genre_item_list list_3 4player 5player 6player 7player 8player">
+                    <h3 class="genre_title">심리</h3>
+                </li>
+            </a>
+            <a href="#quickness">
+                <li class="genre_item_list list_4 2player 3player 4player 5player 6player 7player 8player">
+                    <h3 class="genre_title">순발력</h3>
+                </li>
+            </a>
+            <a href="#activity">
+                <li class="genre_item_list list_5 2player 3player 4player 5player 6player 7player 8player">
+                    <h3 class="genre_title">활동</h3>
+                </li>
+            </a>
+            <a href="puzzle">
+                <li class="genre_item_list list_6 2player 3player 4player 5player">
+                    <h3 class="genre_title">퍼즐</h3>
+                </li>
+            </a>
+            <a href="#memory">
+                <li class="genre_item_list list_7 2player 3player 4player">
+                    <h3 class="genre_title">기억력</h3>
+                </li>
+            </a>
+            <a href="#fortune">
+                <li class="genre_item_list list_8 2player 3player 4player 5player 6player 7player 8player">
+                    <h3 class="genre_title">운 걸기</h3>
+                </li>
+            </a>
+            <a href="#betting">
+                <li class="genre_item_list list_9 2player 3player 4player 5player 6player 7player">
+                    <h3 class="genre_title">배팅</h3>
+                </li>
+            </a>
+            <a href="#cooperation">
+                <li class="genre_item_list list_10 2player 3player 4player 5player 6player 7player">
+                    <h3 class="genre_title">협력</h3>
+                </li>
+            </a>
+            <a href="#operation">
+                <li class="genre_item_list list_11 2player 3player 4player">
+                    <h3 class="genre_title">경제,경영</h3>
+                </li>
+            </a>
+            <a href="#auction">
+                <li class="genre_item_list list_12 4player 5player 6player player 8player">
+                    <h3 class="genre_title">경매</h3>
+                </li>
+            </a>
+            <a href="#negotiation">
+                <li class="genre_item_list list_13 3player 4player 5player 6player player 8player">
+                    <h3 class="genre_title">협상</h3>
+                </li>
+            </a>
+            <a href="#team">
+                <li class="genre_item_list list_14 4player 6player player 8player">
+                    <h3 class="genre_title">팀</h3>
+                </li>
+            </a>
+            <a href="#lie">
+                <li class="genre_item_list list_15 2player 3player 4player 5player">
+                    <h3 class="genre_title">거짓말</h3>
+                </li>
+            </a>
+            <a href="#mafia">
+                <li class="genre_item_list list_16 5player 6player player 8player">
+                    <h3 class="genre_title">마피아</h3>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <!-- 직원추천 시작 -->
+    <div id="recommend" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player">
+            <h3>직원추천!</h3>
+        </div>
+        <div id="rummikub" class="game m_right 2player 3player 4player">
+            <img id="rummikubImg" src="images/rummikubImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>루미 큐브</h3>
+                <p>-2~4인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르:추상 전략(셋 컬렉션)<br>-설명: 5분내외</p>
+                <p>세계적으로 유명한<br>이스라엘 훌라!</p>
+                <a href="https://www.youtube.com/watch?v=uHuYRzgzbL8" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="lostCity" class="game m_right 2player">
+            <img id="lostCityImg" src="images/lostCityImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>로스트 시티</h3>
+                <p>-2인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 전략<br>-설명: 7분내외</p>
+                <p>숨겨진 고대 도시를<br>탐험하세요!</p>
+                <a href="https://www.youtube.com/watch?v=CurCG1Z6x3A" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="lobo77" class="game m_right 3player 4player 5player 6player 7player 8player">
+            <img id="lobo77Img" src="images/lobo77Img.png" width="200px" height="130px">
+            <div class="info">
+                <h3>로보77</h3>
+                <p>- 2~8인(BEST 3~8인)<br>- 난이도:매우 쉬움<br>- 플레이시간: 20~30분<br>- 장르:카드관리, 숫자 계산<br>- 설명: 5분내외</p>
+                <p>덧셈 뺄셈만 하면<br>누구든 할 수 있어!</p>
+                <a href="https://youtu.be/Hcq3aFwpm5E" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="uno" class="game m_right 2player 3player 4player 5player 6player 7player 8player">
+            <img id="unoImg" src="images/unoImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>우노</h3>
+                <p>-2~10인(BEST 3~8인)<br>-난이도: 매우 쉬움<br>-플레이시간: 20~30분<br>-장르: 카드 관리<br>-설명: 3분내외</p>
+                <p>카드가 한장 남았다면<br>우노를 외치세요!</p>
+                <a href="https://youtu.be/jdtFSO2EiA4" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="abalon" class="game m_right 2player">
+            <img id="abalonImg" src="images/abalonImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>아발론</h3>
+                <p>-2인<br>-난이도: 매우 쉬움<br>-플레이시간: 20분<br>-장르: 추상 전략<br>-설명: 2분내외</p>
+                <p>매차례 바뀌는 전황<br>적 진영을 흔들어라!</p>
+                <a href="https://www.youtube.com/watch?v=TiJb1f_bxXY&t=7s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+         <div id="loveletter" class="game m_right 3player 4player 5player">
+            <img id="loveletterImg" src="images/loveletterImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>러브레터</h3>
+                <p>-2~5인(BEST 3~5인)<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 숫자 추리<br>-설명: 6분내외</p>
+                <p>공주님을 흠모하는 젊은이들이<br>오늘도 러브레터를 보냅니다</p>
+                <a href="https://www.youtube.com/watch?v=dybNPUR7Lxg" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!-- 직원추천 끝 -->
+    <div class="clearfix"></div>
+    <!-- 전략 시작 -->
+    <div id="strategy" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player">
+            <h3>전략</h3>
+        </div>
+        <div id="rummikub" class="game m_right 2player 3player 4player">
+            <img id="rummikubImg" src="images/rummikubImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>루미 큐브</h3>
+                <p>-2~4인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르:추상 전략(셋 컬렉션)<br>-설명: 5분내외</p>
+                <p>세계적으로 유명한<br>이스라엘 훌라!</p>
+                <a href="https://www.youtube.com/watch?v=uHuYRzgzbL8" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="lostCity" class="game m_right 2player">
+            <img id="lostCityImg" src="images/lostCityImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>로스트 시티</h3>
+                <p>-2인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 전략<br>-설명: 7분내외</p>
+                <p>숨겨진 고대 도시를<br>탐험하세요!</p>
+                <a href="https://www.youtube.com/watch?v=CurCG1Z6x3A" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="splendor" class="game m_right 2player 3player 4player">
+            <img id="splendorImg" src="images/splendorImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>스플랜더</h3>
+                <p>-2~4인<br>-난이도: 어려움<br>-플레이시간: 30~40분<br>-장르: 전략(엔진 빌딩)<br>-설명: 7분내외</p>
+                <p>르네상스 시대 최고의<br>보석상인이 되어보세요!</p>
+                <a href="https://www.youtube.com/watch?v=y95CM1fxFOk&t=105s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="lobo77" class="game m_right 3player 4player 5player 6player 7player 8player">
+            <img id="lobo77Img" src="images/lobo77Img.png" width="200px" height="130px">
+            <div class="info">
+                <h3>로보77</h3>
+                <p>- 2~8인(BEST 3~8인)<br>- 난이도:매우 쉬움<br>- 플레이시간: 20~30분<br>- 장르:카드관리, 숫자 계산<br>- 설명: 5분내외</p>
+                <p>덧셈 뺄셈만 하면<br>누구든 할 수 있어!</p>
+                <a href="https://youtu.be/Hcq3aFwpm5E" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="uno" class="game m_right 2player 3player 4player 5player 6player 7player 8player">
+            <img id="unoImg" src="images/unoImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>우노</h3>
+                <p>-2~10인(BEST 3~8인)<br>-난이도: 매우 쉬움<br>-플레이시간: 20~30분<br>-장르: 카드 관리<br>-설명: 3분내외</p>
+                <p>카드가 한장 남았다면<br>우노를 외치세요!</p>
+                <a href="https://youtu.be/jdtFSO2EiA4" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="abalon" class="game m_right 2player">
+            <img id="abalonImg" src="images/abalonImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>아발론</h3>
+                <p>-2인<br>-난이도: 매우 쉬움<br>-플레이시간: 20분<br>-장르: 추상 전략<br>-설명: 2분내외</p>
+                <p>매차례 바뀌는 전황<br>적 진영을 흔들어라!</p>
+                <a href="https://www.youtube.com/watch?v=TiJb1f_bxXY&t=7s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="pointsalad" class="game m_right 4player 5player 6player">
+            <img id="pointsaladImg" src="images/pointsaladImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>포인트 샐러드</h3>
+                <p>-2~6인(BEST 4~6인)<br>-난이도: 쉬움<br>-플레이시간: 20분<br>-장르: 전략(셋 컬렉션)<br>-설명: 6분내외</p>
+                <p>샐러드를 만들기 위해서<br>어떤 채소를 골라야 할까요?</p>
+                <a href="https://youtu.be/SZf_YpjeHRo" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="kahuna" class="game m_right 2player">
+            <img id="kahunaImg" src="images/kahunaImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>카후나</h3>
+                <p>-2인<br>-난이도: 보통<br>-플레이시간: 30분<br>-장르: 전략(영향력)<br>-설명: 4분내외</p>
+                <p>열 두섬을 뒤흔드는<br>두 마법사의 최종결전!</p>
+                <a href="https://www.youtube.com/watch?v=eSumNgmZztU&t=2s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="jaipur" class="game m_right 2player">
+            <img id="jaipurImg" src="images/jaipurImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>자이푸르</h3>
+                <p>-2인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 전략<br>-설명: 6분내외</p>
+                <p>인도의 자이푸르<br>최고의 대상인이 되어라!</p>
+                <a href="https://www.youtube.com/watch?v=71lCeK0h0as" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="azul" class="game m_right 2player 3player 4player">
+            <img id="azulImg" src="images/azulImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>아줄</h3>
+                <p>-2~4인<br>-난이도: 어려움<br>-플레이시간: 30~45분<br>-장르: 추상 전략<br>-설명: 6분내외</p>
+                <p>어떤 타일로<br>왕궁 벽면을 꾸미면 좋을까?</p>
+                <a href="https://www.youtube.com/watch?v=bltUD0Sk_Yw" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!-- 전략 끝 -->
+    <div class="clearfix"></div>
+    <!-- 추리 시작 -->
+    <div id="reasoning" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player">
+            <h3>추리</h3>
+        </div>
+        <div id="davinciCode" class="game m_right 2player 3player 4player">
+            <img id="davinciCodeImg" src="images/davinciCodeImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>다빈치 코드</h3>
+                <p>-2~4인<br>-난이도: 쉬움<br>-플레이시간: 15~20분<br>-장르: 숫자 추리<br>-설명: 4분내외</p>
+                <p>누가 먼저 비밀 코드를<br>풀 것인가?</p>
+                <a href="https://www.youtube.com/watch?v=LkFj3833w14" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="clue" class="game m_right 3player 4player 5player">
+            <img id="clueImg" src="images/clueImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>클루</h3>
+                <p>-3~6인(BEST 3~5인)<br>-난이도: 조금 어려움<br>-플레이시간: 30~40분<br>-장르: 범죄 추리<br>-설명: 4분내외</p>
+                <p>대저택에서 벌어진<br>의문의 사건!</p>
+                <a href="https://www.youtube.com/watch?v=7Ium0jpht0g&t=19s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="loveletter" class="game m_right 3player 4player 5player">
+            <img id="loveletterImg" src="images/loveletterImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>러브레터</h3>
+                <p>-2~5인(BEST 3~5인)<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 숫자 추리<br>-설명: 6분내외</p>
+                <p>공주님을 흠모하는 젊은이들이<br>오늘도 러브레터를 보냅니다</p>
+                <a href="https://www.youtube.com/watch?v=dybNPUR7Lxg" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!-- 추리 끝 -->
+    <div class="clearfix"></div>
+    <!-- 심리 시작 -->
+    <div id="trial" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player 7player 8player">
+            <h3>심리</h3>
+        </div>
+        <div id="dixit" class="game m_right 5player 6player">
+            <img id="dixitImg" src="images/dixitImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>딕싯</h3>
+                <p>-3~6인 (BEST 5~6인)<br>-난이도: 보통<br>-플레이시간: 30~40분<br>-장르: 심리(공감)<br>-설명: 5분내외</p>
+                <p>하나의 그림속에 천가지 생각<br>내마음을 맞춰봐!</p>
+                <a href="https://www.youtube.com/watch?v=o3DSH0DfZno" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="brainstorm" class="game m_right 2player 3player 4player 5player 6player 7player 8player">
+            <img id="brainstormImg" src="images/brainstormImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>브레인 스톰</h3>
+                <p>-2~10인<br>-난이도: 매우 쉬움<br>-플레이시간: 10~20분<br>-장르: 창의력<br>-설명: 3분내외</p>
+                <p>무한한 창의력을<br>펼치세요!</p>
+                <a href="https://www.youtube.com/watch?v=m-bYp-2wWM8" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!-- 심리 끝 -->
+    <div class="clearfix"></div>
+    <!-- 순발력 시작 -->
+    <div id="quickness" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player 7player 8player">
+            <h3>순발력</h3>
+        </div>
+        <div id="halligalli" class="game m_right 2player 3player 4player 5player 6player">
+            <img id="halligalliImg" src="images/halligalliImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>할리갈리</h3>
+                <p>-2인~6인<br>-난이도: 매우 쉬움<br>-플레이시간: 15~20분<br>-장르: 순발력<br>-설명: 4분내외</p>
+                <p>같은 과일이 5개가 모이면<br>종을 치세요!</p>
+                <a href="https://www.youtube.com/watch?v=Yi60FK7wGZo" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="halligallicups" class="game m_right 2player 3player 4player">
+            <img id="halligallicupsImg" src="images/halligallicupsImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>할리갈리 컵스</h3>
+                <p>-2인~4인<br>-난이도: 매우 쉬움<br>-플레이시간: 10~20분<br>-장르: 순발력<br>-설명: 3분내외</p>
+                <p>색깔 순서대로 컵을 배치하고<br>종을 치세요!</p>
+                <a href="https://www.youtube.com/watch?v=Eab8HAYjct4" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="5second" class="game m_right 3player 4player 5player 6player 7player 8player">
+            <img id="5secondImg" src="images/5secondImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>5초준다</h3>
+                <p>-3인~8인<br>-난이도: 쉬움<br>-플레이시간: 20분<br>-장르: 단어 순발력<br>-설명: 4분내외</p>
+                <p>엘런 쇼에서 나왔던<br>5초안에 3단어 말하기!</p>
+                <a href="https://www.youtube.com/watch?v=ijXDHcSgn2g" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="blitz" class="game m_right 3player 4player 5player 6player">
+            <img id="blitzImg" src="images/blitzImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>블리츠</h3>
+                <p>-3인~6인<br>-난이도: 쉬움<br>-플레이시간: 20분<br>-장르: 단어 순발력<br>-설명: 5분내외</p>
+                <p>스피드<br>단어연상 게임!</p>
+                <a href="https://www.youtube.com/watch?v=ao6_KtFFTro" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="geistesblitz" class="game m_right 2player 3player 4player 5player 6player 7player 8player">
+            <img id="geistesblitzImg" src="images/geistesblitzImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>유령대소동</h3>
+                <p>-2~8인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 순발력<br>-설명: 3분내외</p>
+                <p>꼬마유령이 찾는 물건은<br>무엇일까요?</p>
+                <a href="https://www.youtube.com/watch?v=ASS6PfcTzKc" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--순발력 끝-->
+    <div class="clearfix"></div>
+    <!--활동 시작-->
+    <div id="activity" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player 7player 8player">
+            <h3>활동</h3>
+        </div>
+        <div id="tumblingMonkey" class="game m_right 2player 3player 4player">
+            <img id="tumblingMonkeyImg" src="images/tumblingMonkeyImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>텀블링 몽키</h3>
+                <p>- 2~4인<br>- 난이도: 매우 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 손재주(균형 잡기)<br>- 설명: 준비중</p>
+                <p>귀여운 원숭이들이 떨어지지<br> 않도록 지켜주세요!</p>
+                <a href="http://www.popcone.co.kr/shop/goods/goods_view.php?goodsno=1677&category=002043003" target="_blank">구매하러 가기</a>
+            </div>
+        </div>
+        <div id="telestrations" class="game m_right 4player 5player 6player 7player 8player">
+            <img id="telestrationsImg" src="images/telestrationsImg.png" width="200px" height="130px">
+            <div class="info">
+                <h4>텔레스트레이션</h4>
+                <p>- 4~8인<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 그리기, 맞추기<br>- 설명: 4분내외</p>
+                <p>그리면서 즐기는<br> 텔레파시 게임!</p>
+                <a href="https://www.youtube.com/watch?v=C6a0JN_mcYU" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="jenga" class="game m_right 2player 3player 4player 5player 6player 7player 8player">
+            <img id="jengaImg" src="images/jengaImg.png" width="200px" height="130px">
+            <div class="info">
+                <h4>젠가</h4>
+                <p>- 2~8인<br>- 난이도: 매우 쉬움<br>- 플레이시간: 10분<br>- 장르: 손재주(균형잡기)</p>
+                <p>나무탑이 쓰러지지 않게<br>조심하세요!</p>
+                <a href="https://www.youtube.com/watch?v=Puc_1XyP-30" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="chairs" class="game m_right 4player 5player 6player 7player 8player">
+            <img id="chairsImg" src="images/chairsImg.png" width="200px" height="130px">
+            <div class="info">
+                <h4>의자쌓기</h4>
+                <p>- 2~8인<br>- 난이도: 매우 쉬움<br>- 플레이시간: 10분<br>- 장르: 손재주(균형잡기)</p>
+                <p>내맘대로<br>의자를 쌓아 올리세요!</p>
+                <a href="https://www.youtube.com/watch?v=ZtPQ1OmC-Hw" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="toasttongtong" class="game m_right 2player 3player 4player">
+            <img id="toasttongtongImg" src="images/toasttongtongImg.png" width="200px" height="130px">
+            <div class="info">
+                <h4>토스트 통통</h4>
+                <p>- 2~4인<br>- 난이도: 쉬움<br>- 플레이시간: 20분<br>- 장르: 순발력, 받기<br>- 설명: 4분내외</p>
+                <p>집중력을 발휘해서<br>잽싸게 받아요!</p>
+                <a href="https://www.youtube.com/watch?v=_jjUQUcvZ4w&t=62s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="kushiexpress" class="game m_right 2player 3player 4player">
+            <img id="kushiexpressImg" src="images/kushiexpressImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>꼬치의 달인</h3>
+                <p>-2~4인<br>-난이도: 쉬움<br>-플레이시간: 20분<br>-장르: 순발력, 손재주<br>-설명: 5분내외</p>
+                <p>누구보다 빨리 꼬치를 만들어<br> 꼬치의 달인이 되세요!</p>
+                <a href="https://www.youtube.com/watch?v=ln7jsFT5Xyk" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--활동 끝-->
+    <div class="clearfix"></div>
+    <!--퍼즐 시작-->
+    <div id="puzzle" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 6player">
+            <h3>퍼즐</h3>
+        </div>
+        <div id="blokus" class="game m_right 2player 4player">
+            <img id="blokusImg" src="images/blokusImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>블로커스</h3>
+                <p>- 2,4인<br>- 난이도:매우 쉬움<br>- 플레이시간: 15~20분<br>- 장르: 퍼즐<br>- 설명: 5분내외</p>
+                <p>규칙은 하나<br>승리를 위한 무한도전!</p>
+                <a href="https://www.youtube.com/watch?v=zyIheucL1u8" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="gemblo" class="game m_right 3player 4player 6player">
+            <img id="gembloImg" src="images/gembloImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>젬블로</h3>
+                <p>- 3~6인 (BEST 3,4,6인)<br>- 난이도: 매우 쉬움<br>- 플레이시간: 15~20분<br>- 장르: 퍼즐<br>- 설명: 3분내외</p>
+                <p>보석으로 점령하는<br>땅따먹기 게임!</p>
+                <a href="https://www.youtube.com/watch?v=6GRANK9Vx4o" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="labyrinth" class="game m_right 2player 3player 4player">
+            <img id="labyrinthImg" src="images/labyrinthImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>라비린스</h3>
+                <p>- 2~4인<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 길만들기<br>- 설명: 3분내외</p>
+                <p>마법에 걸린 미로속에서<br>보물들을 모두 찾아내세요!</p>
+                <a href="https://www.youtube.com/watch?v=Tje7HrXIezg" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="qwirkle" class="game m_right 2player 3player 4player">
+            <img id="qwirkleImg" src="images/qwirkleImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>쿼클</h3>
+                <p>- 3~6인<br>- 난이도: 보통<br>- 플레이시간: 30~50분<br>- 장르: 퍼즐 전략<br>- 설명: 6분내외</p>
+                <p>섞고 맞추고<br>점수를 모아 이기세요!</p>
+                <a href="https://www.youtube.com/watch?v=VQwi4zmEpvw" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="ubongo" class="game m_right 2player 3player 4player">
+            <img id="ubongoImg" src="images/ubongoImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>우봉고</h3>
+                <p>-2~4인<br>-난이도: 쉬움<br>-플레이시간: 20~30분<br>-장르: 순발력, 퍼즐<br>-설명: 2분내외</p>
+                <p>퍼즐을 다 풀었다면<br> 우봉고!</p>
+                <a href="https://www.youtube.com/watch?v=oFQEEq8y9oU" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="ubongo3d" class="game m_right 2player 3player 4player">
+            <img id="ubongo3dImg" src="images/ubongo3dImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>우봉고3D</h3>
+                <p>-2~4인<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 순발력<br>-설명: 3분내외</p>
+                <p>입체블록으로 즐기는<br>우봉고3D!</p>
+                <a href="https://www.youtube.com/watch?v=S30x5ZgfpnY" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="ingenious" class="game m_right 2player 3player 4player">
+            <img id="ingeniousImg" src="images/ingeniousImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>인지니어스</h3>
+                <p>-2~4인<br>-난이도: 보통<br>-플레이시간: 30~50분<br>-장르: 퍼즐, 전략<br>-설명: 5분내외</p>
+                <p>생각이 즐거워 지는<br>쉽고빠른 전략게임!</p>
+                <a href="https://youtu.be/NpTW2bbzWIo" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--퍼즐 끝-->
+    <div class="clearfix"></div>
+    <!--기억력 시작-->
+    <div id="memory" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player">
+            <h3>기억력</h3>
+        </div>
+        <div id="chickenchacha" class="game m_right 2player 3player 4player">
+            <img id="chickenchachaImg" src="images/chickenchachaImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>치킨차차</h3>
+                <p>- 2~4인<br>- 난이도: 쉬움<br>- 플레이시간: 10~20분<br>- 장르: 기억력<br>- 설명: 2분내외</p>
+                <p>기억력 좋은 닭들의<br>꽁지 쟁탈전!</p>
+                <a href="https://www.youtube.com/watch?v=eeoy4H_9qK4&t=13s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="dasmagischelabyrinth" class="game m_right 2player 3player 4player">
+            <img id="dasmagischelabyrinthImg" src="images/dasmagischelabyrinthImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>마법의 미로</h3>
+                <p>- 2~4인<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 기억력<br>- 설명: 4분내외</p>
+                <p>보이지 않는 미로를 알아내는<br>마법사가 될 수 있을까요?</p>
+                <a href="https://www.youtube.com/watch?v=kgkOe37yfTc" target="_blank">설명 보기</a>
+        </div>
+
+    </div>
+    <!--기억력 끝-->
+    <div class="clearfix"></div>
+    <!--운걸기 시작-->
+    <div id="fortune" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player 7player 8player">
+            <h3>운걸기</h3>
+        </div>
+        <div id="cantstop" class="game m_right 2player 3player 4player">
+            <img id="cantstopImg" src="images/cantstopImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>캔트스탑</h3>
+                <p>- 2~4인(BEST 2~3인)<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 주사위 운걸기</p>
+                <p>주사위 굴리는 것을<br>멈출수 없어요!</p>
+                <a href="https://www.youtube.com/watch?v=FC8DIECMljQ" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="mahe" class="game m_right 4player 5player 6player 7player">
+            <img id="maheImg" src="images/maheImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>마헤</h3>
+                <p>- 2~7인(BEST 4~7인)<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 주사위 레이싱</p>
+                <p>주사위 3개에 울고 웃는<br>거북이들의 레이싱!</p>
+                <a href="https://www.youtube.com/watch?v=SPBnPmgCN2w" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="fujiflush" class="game m_right 5player 6player 7player 8player">
+            <img id="fujiflushImg" src="images/fujiflushImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>후지 플러시</h3>
+                <p>- 3~8인(BEST 5~8인)<br>- 난이도: 보통<br>- 플레이시간: 20분<br>- 장르: 카드 영향력</p>
+                <p>대세를 따를것인가<br>나혼자 살아남을것인가!</p>
+                <a href="https://www.youtube.com/watch?v=bNXRgdciXls" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="darkhorse" class="game m_right 4player 5player 6player">
+            <img id="darkhorseImg" src="images/darkhorseImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>다크 호스</h3>
+                <p>- 2~6인(BEST 4~6인)<br>- 난이도: 보통<br>- 플레이시간: 20~30분<br>- 장르: 카드 레이싱</p>
+                <p>일곱마리 동물들의<br>엎치락 뒤치락 레이싱 게임!</p>
+                <a href="https://www.youtube.com/watch?v=NifC70dloWU" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="archaeology" class="game m_right 4player 5player">
+            <img id="archaeologyImg" src="images/archaeologyImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>아키올로지</h3>
+                <p>- 2~5인(BEST 4~5인)<br>- 난이도: 보통<br>- 플레이시간: 20~30분<br>- 장르: 카드뽑기,셋컬렉션<br>- 설명: 6분내외</p>
+                <p>모래폭풍을 피해서<br>보물을 모으자!</p>
+                <a href="https://www.youtube.com/watch?v=-p7u680vHd4&t=1s" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="6nimmt" class="game m_right 5player 6player 7player 8player">
+            <img id="6nimmtImg" src="images/6nimmtImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>젝스님트</h3>
+                <p>- 2~10인(BEST 5~10인)<br>- 난이도: 보통<br>- 플레이시간: 20~30분<br>- 장르: 동시선택, 카드관리<br>- 설명: 5분내외</p> 
+                <p>6번째 자리에 카드를 놓으면<br>소 떼가 몰려옵니다!</p>
+                <a href="https://www.youtube.com/watch?v=6Ju2-NCh7SE" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--운걸기 끝-->
+    <div class="clearfix"></div>
+    <!--배팅 시작-->
+    <div id="betting" class="overflow_scroll">
+        <div class="divide_line 3player 4player 5player">
+            <h3>배팅</h3>
+        </div>
+        <div id="lasvegas" class="game m_right 3player 4player 5player">
+            <img id="lasvegasImg" src="images/lasvegasImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>라스베가스</h3>
+                <p>2~5인 (BEST 3인~5인)<br>난이도: 보통<br>플레이시간: 30~40분<br>장르: 배팅</p>
+                <p>여러분은 라스베가스에서<br>운을 시험하는 모험가입니다!</p>
+                <a href="https://www.youtube.com/watch?v=LkFj3833w14" target="_blank">설명 보기</a>
+            </div>
+        </div>
+
+    </div>
+    <!--배팅 끝-->
+    <div class="clearfix"></div>
+    <!--협력 시작-->
+    <div id="cooperation" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player 6player 7player">
+            <h3>협력</h3>
+        </div>
+        <div id="themind" class="game m_right 2player 3player 4player">
+            <img id="themindImg" src="images/themindImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>더 마인드</h3>
+                <p>- 2~4인 (BEST 3~4인)<br>- 난이도: 보통<br>- 플레이시간: 20~30분<br>- 장르: 협력</p>
+                <p>너의 마음을 보여줘<br>다들 준비되었나요?</p>
+                <a href="https://www.youtube.com/watch?v=FC8DIECMljQ" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="bandido" class="game m_right 2player 3player 4player">
+            <img id="bandidoImg" src="images/bandidoImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>반디도</h3>
+                <p>- 2~4인<br>- 난이도: 쉬움<br>- 플레이시간: 20분<br>- 장르: 협력, 길막기</p>
+                <p>천재 땅굴 탈옥수<br>반디도를 체포하세요!</p>
+                <a href="https://www.youtube.com/watch?v=FC8DIECMljQ" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="justone" class="game m_right 5player 6player 7player">
+            <img id="justoneImg" src="images/justoneImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>저스트 원</h3>
+                <p>- 3~7인 (BEST 5~7인)<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 협력 추리</p>
+                <p>모두가 힘을 합쳐<br>최고 점수에 도전하세요!</p>
+                <a href="https://www.youtube.com/watch?v=oYxLZaPv20U" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--협력 끝-->
+    <div class="clearfix"></div>
+    <!--경영 시작-->
+    <div id="operation" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player">
+            <h3>경제,경영</h3>
+        </div>
+        <div id="burumabble" class="game m_right 2player 3player 4player">
+            <img id="burumabbleImg" src="images/burumabbleImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>부루마블</h3>
+                <p>-2~4인<br>-난이도: 보통<br>-플레이시간: 60~90분<br>-장르: 경영</p>
+                <p>주사위로 떠나는<br>신나는 세계여행!</p>
+                <a href="https://www.youtube.com/watch?v=FC8DIECMljQ" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--경영 끝-->
+    <div class="clearfix"></div>
+    <!--경매 시작-->
+    <div id="auction" class="overflow_scroll">
+        <div class="divide_line 4player 5player 6player 7player">
+            <h3>경매</h3>
+        </div>
+        <div id="nothanks" class="game m_right 4player 5player 6player 7player">
+            <img id="nothanksImg" src="images/nothanksImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>노 땡스!</h3>
+                <p>- 3~7인 (BEST 5인~7인)<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 경매</p>
+                <p>더지니어스에서 나온<br>마이너스 경매</p>
+                <a href="https://www.divedice.com/site/game/gds_detail01.php?mode=view&prd_idx=16288" target="_blank">구매하러 가기</a>
+            </div>
+        </div>
+    </div>
+    <!--경매 끝-->
+    <div class="clearfix"></div>
+    <!--협상 시작-->
+    <div id="negotiation" class="overflow_scroll">
+        <div class="divide_line 3player 4player 5player">
+            <h3>협상</h3>
+        </div>
+        <div id="chinatown" class="game m_right 3player 4player 5player">
+            <img id="chinatownImg" src="images/chinatownImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>차이나타운</h3>
+                <p>-3~5인<br>-난이도: 어려움<br>-플레이시간: 60~90분<br>-장르: 협상 <br>-설명: 준비중</p>
+                <p>협상기술을 발휘해<br>최고의 상인이 되세요!</p>
+                <a href="http://www.popcone.co.kr/shop/goods/goods_view.php?goodsno=62142&category=002043004" target="_blank">구매하러 가기</a>
+            </div>
+        </div>
+        <div id="bohnanza" class="game m_right 3player 4player 5player">
+            <img id="bohnanzaImg" src="images/bohnanzaImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>보난자</h3>
+                <p>-3~5인<br>-난이도: 보통<br>-플레이시간: 40~50분<br>-장르: 협상,셋컬렉션<br>-설명: 7분내외</p>
+                <p>콩심은데<br>돈난다!</p>
+                <a href="https://www.youtube.com/watch?v=6u0qoSmwyWo" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="citadels" class="game m_right 5player 6player 7player">
+            <img id="citadelsImg" src="images/citadelsImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>시타델</h3>
+                <p>-2~8인<br>-난이도: 어려움<br>-플레이시간: 40~60분<br>-장르: 협잡<br>-설명: 8분내외</p>
+                <p>협상과 협잡이 난무하는<br>권모술수 보드게임!</p>
+                <a href="https://youtu.be/w5_1kTykqn0" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--협상 끝-->
+    <div class="clearfix"></div>
+    <!--팀 시작-->
+    <div id="team" class="overflow_scroll">
+        <div class="divide_line 4player 6player 8player">
+            <h3>팀</h3>
+        </div>
+        <div id="sequence" class="game m_right 4player 6player 8player">
+            <img id="sequenceImg" src="images/sequenceImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>시퀀스</h3>
+                <p>2~12인 (BEST 4,6,9인)<br>난이도: 보통<br>플레이시간: 20~30분<br>장르: 팀</p>
+                <p>팀원과 대화하지 않고<br>협력하여 오목을 만드세요!</p>
+                <a href="https://www.youtube.com/watch?v=LkFj3833w14" target="_blank">설명 보기</a>
+            </div>
+        </div>
+
+    </div>
+    <!--팀 끝-->
+    <div class="clearfix"></div>
+    <!--거짓말 시작-->
+    <div id="lie" class="overflow_scroll">
+        <div class="divide_line 2player 3player 4player 5player">
+            <h3>거짓말</h3>
+        </div>
+        <div id="ciaociao" class="game m_right 2player 3player 4player 5player">
+            <img id="ciaociaoImg" src="images/ciaociaoImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>챠오챠오</h3>
+                <p>- 2~5인<br>- 난이도: 쉬움<br>- 플레이시간: 20~30분<br>- 장르: 거짓말</p>
+                <p>속임수를 써서<br>늪지대를 건너자!</p>
+                <a href="https://www.youtube.com/watch?v=FC8DIECMljQ" target="_blank">설명 보기</a>
+            </div>
+        </div>
+    </div>
+    <!--거짓말 끝-->
+    <div class="clearfix"></div>
+    <!--마피아 시작-->
+    <div id="mafia" class="overflow_scroll">
+        <div class="divide_line 5player 6player 7player 8player">
+            <h3>마피아</h3>
+        </div>
+        <div id="bang" class="game m_right 5player 6player 7player">
+            <img id="bangImg" src="images/bangImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>뱅!</h3>
+                <p>4~7인 (BEST 5인~7인)<br>난이도: 어려움<br>플레이시간: 30~50분<br>장르: 마피아</p>
+                <p>서부 개척 시대<br>쫓고 쫓기는 총격전!</p>
+                <a href="https://www.youtube.com/watch?v=LkFj3833w14" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="spyFall" class="game m_right 5player 6player 7player 8player">
+            <img id="spyFallImg" src="images/spyFallImg.png" width="200px" height="130px">
+            <div class="info">
+                <h3>스파이 폴</h3>
+                <p>-3~8인 (BEST 5인~8인)<br>-난이도: 보통<br>-플레이시간: 20~30분<br>-장르: 마피아</p>
+                <p>스파이는 오늘도 <br>낮선장소로 침투합니다..</p>
+                <a href="https://www.youtube.com/watch?v=gS5xUMDpX3k" target="_blank">설명 보기</a>
+            </div>
+        </div>
+        <div id="resistanceabalon" class="game m_right 5player 6player 7player 8player">
+            <img id="resistanceabalonImg" src="images/resistanceabalonImg.png" width="200px" height="130px">
+            <div class="info">
+                <h4>레지스탕스 아발론</h4>
+                <p>-5~10인 (BEST 7인~8인)<br>-난이도: 매우 어려움<br>-플레이시간: 30~50분<br>-장르: 마피아</p>
+                <p>카멜롯의 전설<br>숨겨진 정체 속임수!</p>
+                <a href="https://www.youtube.com/watch?v=LkFj3833w14" target="_blank">설명 보기</a>
+            </div>
+        </div>
+
+    </div>
+    <!--마피아 끝-->
+    <div class="clearfix"></div>
+    <button class="go-to-top">맨 위로</button>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $('.go-to-top').on('click', function () {
+            $('html, body').animate({ scrollTop: 0 }, 500);
+        })
+        $('.menu button').on('click', selectMenu);
+        //인원 눌렀을때 인원에 맞게 필터링 해주는 함수 시작
+        function selectMenu(event) {
+            var targetId = event.currentTarget.id;
+            $('.genre_item_list').hide();
+            $('.divide_line').hide();
+            $('.game').hide();
+            if (targetId === '2playerFilter') {
+                $('.2player').fadeIn(2000);
+            } else if (targetId === '3playerFilter') {
+                $('.3player').fadeIn(2000);
+            } else if (targetId === '4playerFilter') {
+                $('.4player').fadeIn(2000);
+            } else if (targetId === '5playerFilter') {
+                $('.5player').fadeIn(2000);
+            } else if (targetId === '6playerFilter') {
+                $('.6player').fadeIn(2000);
+            } else if (targetId === '7playerFilter') {
+                $('.7player').fadeIn(2000);
+            } else {
+                $('.8player').fadeIn(2000);
+            }
+        }
+//인원 눌렀을때 인원에 맞게 필터링 해주는 함수 끝
+    </script>
+</body>
+
+</html>

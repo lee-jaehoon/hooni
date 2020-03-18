@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+src: url(../fonts/BMJUA_otf.otf);
+font-family: "jua";
+}
+body{
+    background-color: #f0e8d9;
+}
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
+h1{
+    font-size: 64px;
+    font-family: "jua";
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #58595b;
+}
+h2{
+    font-size: 32px;
+    font-family: "jua";
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #58595b;
+}
+.game{
+    background-color: white;
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "jua";
+    color: #58595b;
+    float: left;
+}
+.m_right{
+margin-right: 15px;
+margin-left: 15px;
+
+}
+.game img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.game h3{
+    font-size: 32px;
+    margin: 0px 0px 10px 0px;
+}
+.game p{
+ text-align: left;
+    margin: 0px 0px 16px 0px;
+}
+.game a{
+text-decoration: none;
+    color: #0000ee;
+}
+.info{
+padding-top: 5px;
+padding-bottom: 20px;
+padding-right: 10px;
+padding-left: 20px;
+}
+.clearfix{
+clear: both;
+}
+.menu{
+    display: inline-block;
+    font-family: "jua";
+    font-size: 16px;
+    word-spacing: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #58595b;
+    border: solid 1px #58595b;
+    border-radius: 5px;
+    }
+.menu ul{
+    display: inline-block; 
+}
+.menu button{
+    color: #58595b;
+    font-family: "jua";
+  background: none;
+  border: none;
+  margin: 10px 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.go-to-top{
+    font-family: "jua";
+    font-size: 16px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #2a91db;
+    border-color: #2a91db;
+}
